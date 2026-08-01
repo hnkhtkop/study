@@ -1,0 +1,30 @@
+#include <iostream>
+int main() {
+	// 转义字符
+	
+	// 换行符\n 
+	std::cout << "Hello, World!\n";	
+	// 反斜杠 \\如果要输出反斜杠本身，需要使用两个反斜杠来表示一个反斜杠		
+
+	std::cout << "\\\n";
+	;
+	// 水平制表符 \t  作用可以整齐输出数据
+	std::cout << "aasaaaa\thelloworld \n";
+	std::cout << "aaacaa\thelloworld \n";
+	std::cout << "aaqaa\thelloworld \n";
+	std::cout << sizeof('\\') << "\n";
+	std::cout << "char: " << sizeof(char) << "\n";
+	std::cout << "int: " << sizeof(int) << "\n";
+	std::cout << "long: " << sizeof(long) << "\n";
+	std::cout << "long long: " << sizeof(long long) << "\n";
+	std::cout << "pointer: " << sizeof(void*) << "\n";
+	const int aaa = 100;
+	// aaa = 200; // This would cause an error since aaa is const   cost修饰变量后，变量的值不能被修改
+	std::cout << "aaa: " << (aaa) << "\n";	
+	#define PI 3.1415926    // #define PI 3.1415926预处理指令 #define用于定义宏常量不可修改，PI是宏名，3.1415926是宏值
+	std ::cout << "PI: " << (PI) << "\n";	
+
+
+
+    return 0;
+}
