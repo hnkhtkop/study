@@ -1,0 +1,33 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+//选择结构多条件inf语句
+//用户输入考试分数
+int score = 0;
+cout << "请输入考试分数: " << endl;
+cin >> score;
+
+//提示用户输入的分数
+cout << "您输入的考试分数是：" << score << endl;
+
+//根据分数判断录取情况
+if (score >=600)
+{
+ cout <<"考上一本大学"<< endl;
+}
+else if (score>=500)
+{
+ cout <<"考上二本大学"<< endl;
+}
+else if (score>=400)
+{
+cout <<"考上三本大学" << endl;
+}
+else
+{
+ cout <<"没有考上大学，请重考" << endl;
+}
+
+return 0;
+}
