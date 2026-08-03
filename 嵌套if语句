@@ -1,0 +1,45 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+//提示用户输入高考分数
+int score = 0 ；
+cout <<"请输入高考分数：" << endl;
+
+cin >> score;
+
+//2.显示高考分数
+cout <<"身教分数为：" << score << endl;
+
+//根据分数做出判断
+if (score >=600)
+{
+ cout <<"考上一本" << endl;
+ if (score >=700)
+ {
+  cout <<"考上北大" << endl;
+  }
+  else if (score >=650)
+  {
+   cout <<"考上清华大学" << endl;
+   }
+   else
+   {
+    cout <<"考上人民大学" << endl;
+    }
+ }
+ else if (score >=500)
+ {
+  cout <<"考上二本" << endl;
+  }
+  else if (score >=400)
+  {
+   cout <<"考上三本" << endl;
+   }
+   else
+   {
+    cout <<"未考上大学" << endl;
+    }
+
+    return 0;
+    }
